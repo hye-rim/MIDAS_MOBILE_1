@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    tools:context=".service_customer.views.CartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_lessroundrect_mono"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_cart_order"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_round_yellow_complete"
+            android:text="주문"
+            android:textColor="@color/colorWhite" />
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_customer_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/txt_cart_total_cost"
+                android:layout_marginTop="4dp"
+                android:nestedScrollingEnabled="false">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/view_cart_dmp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rcv_customer_cart"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary" />
+
+            <include
+                layout="@layout/item_menu_cart_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_cart_dmp"
+                android:layout_marginTop="8dp" />
+
+        </RelativeLayout>
+        <!--</ScrollView>-->
+    </RelativeLayout>
+
+</RelativeLayout>

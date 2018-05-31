@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cart"
+            android:title="장바구니" />
+        <item
+            android:id="@+id/reservation"
+            android:title="예약현황" />
+        <item
+            android:id="@+id/purchaseHistory"
+            android:title="구매내역" />
+    </group>
+
+    <item android:title="Etc">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:title="로그아웃" />
+            <item
+                android:id="@+id/license"
+                android:title="오픈소스 라이선스" />
+        </menu>
+    </item>
+
+</menu>

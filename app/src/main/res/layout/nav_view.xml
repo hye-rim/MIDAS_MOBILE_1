@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="304dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.296"
+        android:background="@drawable/coffeeback"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorInvisibleBlue">
+
+        </LinearLayout>
+
+        <com.midas.mobile.utils.RoundImageView
+            android:id="@+id/imgNavUser"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/circle_img" />
+
+        <TextView
+            android:id="@+id/txtNavUserNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@id/imgNavUser"
+            android:text="사용자 이름"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtNavUserPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNavUserNickName"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/imgNavUser"
+            android:text="적립 포인트"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_customer_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 정보" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_customer_cart"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장바구니" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_customer_reservation_status"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예약현황" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.001" />
+
+    <LinearLayout
+        android:id="@+id/layout_customer_event"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이벤트 게시판" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_customer_open_source_license"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오픈소스 라이센스" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_customer_logout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

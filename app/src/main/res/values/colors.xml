@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3D250F</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#EFCB5C</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="background">#72624F</color>
+    <color name="backgroundDark">#F4F2F4</color>
+    <color name="backgroundLight">#D6D2C7</color>
+
+    <!-- Default Pallete -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimaryTransparent">#403D250F</color>
+    <color name="colorGray">#888888</color>
+    <color name="colorWhitePressed">#f1f1f1</color>
+    <color name="colorTextGray">#A0A0A0</color>
+    <color name="colorCostPink">#E55D87</color>
+    <color name="colorRightGray">#eeeeee</color>
+    <color name="colorUpdateToolbar">#0097a7</color>
+    <color name="colorInvisibleBlue">#880bdbf2</color>
+    <color name="colorBrightGray">#BBBBBB</color>
+
+</resources>

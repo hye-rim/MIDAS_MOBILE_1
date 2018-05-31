@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sign_up_linearlayout_box"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="14"
+        android:background="@drawable/button_rect_line"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/sign_up_edittext_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_lessroundrect_mono"
+                android:hint="이메일"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/midasit_email"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/sign_up_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/button_lessroundrect_mono"
+            android:hint="Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/sign_up_edittext_pw"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/button_lessroundrect_mono"
+            android:hint="Password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/sign_up_edittext_pw_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/button_lessroundrect_mono"
+            android:hint="Password Confirm"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sign_up_textview_pw_alert"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="11sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="3"
+            android:background="@drawable/button_lessroundrect_activated"
+            android:text="등록"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

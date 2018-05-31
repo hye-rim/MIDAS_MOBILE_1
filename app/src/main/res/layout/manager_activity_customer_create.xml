@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sign_up_linearlayout_box"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="14"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="이메일"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/customer_create_textview_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/background_lessroundrect_mono"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="이름"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/customer_create_textview_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/background_lessroundrect_mono"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="구분"
+
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/customer_create_radiobutton_customer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorAccent"
+                    android:checked="true"
+                    android:paddingBottom="1dp"
+                    android:text="사용자"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/customer_create_radiobutton_manager"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorAccent"
+                    android:checked="false"
+                    android:paddingBottom="1dp"
+                    android:text="관리자"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="총 주문 수"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/customer_create_textview_reservation_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/background_lessroundrect_mono"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="등록일"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/customer_create_textview_register_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+
+                android:background="@drawable/background_lessroundrect_mono"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="00:00"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/customer_create_button_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="4"
+            android:background="@drawable/button_lessroundrect_activated"
+            android:text="수정"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

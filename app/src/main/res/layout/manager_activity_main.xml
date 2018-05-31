@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.midas.mobile.custom.MainViewPager
+        android:id="@+id/manager_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/manager_navigationtabbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        app:ntb_active_color="@color/colorAccent"
+        app:ntb_inactive_color="@color/background"
+        app:ntb_bg_color="@color/colorPrimary"
+        app:ntb_preview_colors="@color/colorPrimary"
+
+        app:ntb_animation_duration="0"
+        app:ntb_icon_size_fraction="0.5"
+        app:ntb_scaled="false"
+        app:ntb_swiped="false"
+        app:ntb_tinted="true"
+        app:ntb_title_size="10sp"
+
+
+        app:ntb_title_mode="all"
+        app:ntb_titled="true" />
+
+</LinearLayout>

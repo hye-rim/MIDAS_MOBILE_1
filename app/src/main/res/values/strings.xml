@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">cafe M</string>
+    <string name="error_null">값이 없습니다</string>
+    <string name="error_network">네트워크 환경을 확인해주세요</string>
+
+
+    <string name="midasit_email">\@midasit.com</string>
+    <string name="title_activity_menu_management">MenuManagementActivity</string>
+
+    <!--관리자 메뉴-->
+    <string name="menu_user">유저</string>
+    <string name="menu_cart">예약</string>
+    <string name="menu_menu">메뉴</string>
+    <string name="menu_chart">통계</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>

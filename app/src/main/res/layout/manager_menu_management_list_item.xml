@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rooms_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="10dp"
+    android:paddingBottom="20dp"
+    app:cardBackgroundColor="@color/backgroundLight">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/menu_image"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:src="@color/white" />
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/menu_image"
+            android:text="title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="0 원"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu_contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menu_name"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/menu_image"
+            android:maxLines="4"
+            android:text="contents"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/menu_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:text="수정일"
+            android:textColor="@color/colorPrimaryText" />
+
+        <TextView
+            android:id="@+id/menu_textview_update_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/menu_textview"
+            android:text="00:00"
+            android:textColor="@color/colorPrimaryText" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/menu_button_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_pencil"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/menu_button_delete" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/menu_button_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_trash"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

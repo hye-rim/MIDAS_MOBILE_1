@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".service_customer.views.DetailMenuInfoActivity">
+
+    <Button
+        android:id="@+id/btn_detail_menu_order"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="바로 주문하기"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_lessroundrect_mono"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_detail_menu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/layout_coffee_info"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/img_detail_menu"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_detail_menu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="콜드 브루"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_detail_menu_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/img_detail_menu"
+                android:text="4,500 원"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_txt"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="사이즈" />
+
+                <ImageView
+                    android:id="@+id/img_detail_dump"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_detail_menu_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/img_detail_dump"
+                    android:text="Small" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_dmp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/layout_coffee_info"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBlack" />
+
+
+        <ScrollView
+            android:id="@+id/layout_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_dmp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/txt_detail_menu_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/layout_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_txt"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="총 수량"
+                android:textSize="16sp" />w
+
+
+            <Button
+                android:id="@+id/btn_detail_menu_count_plus"
+                android:layout_width="24dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                android:text="+"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/txt_detail_menu_count"
+                android:layout_width="24dp"
+                android:layout_height="36dp"
+                android:layout_toLeftOf="@id/btn_detail_menu_count_plus"
+                android:background="@color/colorWhite"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_detail_menu_count_minus"
+                android:layout_width="24dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/txt_detail_menu_count"
+                android:background="@color/colorPrimary"
+                android:text="-"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_count"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 결제금액" />
+
+            <TextView
+                android:id="@+id/txt_detail_menu_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="50,000원" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_detail_add_basket"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_round_yellow_complete"
+            android:text="담기"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
