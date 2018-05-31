@@ -1,0 +1,2 @@
+# MIDAS_MOBILE_1-
+MIDAS Challenge 2018 MOBILE 1조
