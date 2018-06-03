@@ -3,7 +3,7 @@ MIDAS Challenge 2018 우수상
 
 `카페 솔루션 만들기 MOBILE 1조`
 
-#### concept
+## concept
 
 - 마이다스 사원
   - midas Email을 통한 손쉬운 가입
@@ -12,7 +12,7 @@ MIDAS Challenge 2018 우수상
   - 당일 예약만 가능하도록하여 손쉽게 주문
   - 손님 예약시 푸시알람이 오게하여 반응성 향상
 
-#### 기능
+## 기능
 - 관리자
   - 로그인 (관리자/사용자)
   - 회원 조회/수정/삭제/등록
@@ -30,7 +30,7 @@ MIDAS Challenge 2018 우수상
   - 월별 구매내역 조회
   - 회원 정보 상세 조회
 
-#### 설계
+## 설계
 
 <img align="center" width="80%" height="80%" style="margin:0px 0px 0px 0px" src="/design.png">
 
@@ -38,7 +38,7 @@ MIDAS Challenge 2018 우수상
 
 <img align="center" width="80%" height="80%" style="margin:0px 0px 0px 0px" src="/apiList.png">
 
-#### 팀 구성
+### 팀 구성
 
   - [이하늘](https://gitlab.com/softsquared-hanul)
     - UI/UX
@@ -51,7 +51,7 @@ MIDAS Challenge 2018 우수상
 
 <br/>
 
-#### OpenSource
+## OpenSource
 
 - [butterknife](http://jakewharton.github.io/butterknife/) 8.8.1
 - [Glide](https://github.com/bumptech/glide) 4.7.1
