@@ -44,7 +44,7 @@ MIDAS Challenge 2018 우수상
     - UI/UX
     - Server & DB
     - Android 20%
-  - [박혜림](https://github.com/hye-rim)
+  - [박혜림](https://github.com/hyerim-p)
     - 관리자 기능 Android 40%
   - [김헌진](https://github.com/KimHunJin)
     - 사용자 기능 Android 40%
